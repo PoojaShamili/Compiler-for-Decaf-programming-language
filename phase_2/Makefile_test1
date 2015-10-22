@@ -1,0 +1,8 @@
+test.tab.c test.tab.h: test.y
+	bison -d test.y
+
+lex.yy.c: snazzle.l test.tab.h
+	flex snazzle.l
+
+syntax_analyser: lex.yy.c test.tab.c test.tab.h
+	g++ test.tab.c lex.yy.c -lfl -o syntax_analyser

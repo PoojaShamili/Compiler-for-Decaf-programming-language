@@ -1,0 +1,11 @@
+class Program 
+{ 
+	int pooja;
+	int mom;
+	int s;
+	boolean dad;
+	pooja = 5 + 10 * 5; 
+	callout("printf", pooja);
+	int b;
+	s = 'a';
+}
